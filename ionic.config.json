@@ -1,0 +1,8 @@
+{
+  "name": "Ionic QRCode-Scanner",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

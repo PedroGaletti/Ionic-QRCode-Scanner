@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label floating>Text</ion-label>
+    <ion-input type="text" name="text" [(ngModel)]="encodeText"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <button ion-button block (click)="encode()">Encode</button>
+  </ion-item>
+
+  <ion-item>
+    <button ion-button block (click)="scan()">Scan</button>
+    <br />
+    <span *ngIf="scannedData.text">{{ scannedData.text }}</span>
+  </ion-item>
+
+</ion-content>
